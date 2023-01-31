@@ -31,7 +31,7 @@ def main():
     elif operation == 'power':
         result = power(start_number, operation_number)
     
-    print(result)
+    print(f'The result is {result}")
     print(explanation(start_number, operation_number, operation, result))
 
     return 0
