@@ -25,6 +25,9 @@ def power(num1, num2):
     result = num1 ** num2
     return result
 
+def add_then_multiply(num1, num2):
+    return (num1 + num2) * num2
+
 
 def explanation (num1, num2, operation, result):
     by = ''

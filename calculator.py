@@ -1,5 +1,5 @@
 import sys
-from calc import add, subtract, multiply, divide, power, explanation
+from calc import add, subtract, multiply, divide, power, explanation, add_then_multiply
 
 def get_args():
     try:
@@ -30,8 +30,11 @@ def main():
         result = divide(start_number, operation_number)
     elif operation == 'power':
         result = power(start_number, operation_number)
+    elif operation == 'add_then_multiply':
+        result = add_then_multiply(start_number, operation_number)
+
     
-    print(f'The result is {result}")
+    print(f'The result is {result}')
     print(explanation(start_number, operation_number, operation, result))
 
     return 0
